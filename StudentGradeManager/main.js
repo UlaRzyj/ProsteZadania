@@ -16,6 +16,16 @@ class Student {
     }
 }
 
-const student = new Student('John', 25);
-student.addGrade(1, 2, 3);
-student.getAverage();
+const studentList = [];
+
+const student1 = new Student('John', 25);
+studentList.push(student1);
+
+const student2 = new Student('Maria', 14);
+studentList.push(student2);
+
+student1.addGrade(1, 2, 3);
+student1.getAverage();
+
+student2.addGrade(4, 5);
+student2.getAverage();
