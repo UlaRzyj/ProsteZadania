@@ -18,5 +18,25 @@ function filterCategory(category1) {
     category.forEach(product => console.log(product.name));
 }
 
+function filterPrice(type) {
+
+
+    let maxPrice = Math.max(...products.map(product => product.price));
+    let minPrice = Math.min(...products.map(product => product.price));
+        if(type === "max") {
+            products.sort((a, b) => a.price - b.price);
+            console.log(`Produkty zposortowane rosnąco po cenie:`);
+        }
+        else if(type === "min") {
+            products.sort((a, b) => b.price - a.price);
+            console.log(`Produkty posortowane malejąco po cenie: `);
+        }
+    
+
+    products.forEach(product => console.log(product));
+    
+}
+
+filterPrice("min");
 
 filterCategory('smartphones');
