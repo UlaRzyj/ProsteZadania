@@ -42,3 +42,4 @@ cart.addProduct(o);
 cart.showCart();
 cart.removeProduct('banana');
 cart.showCart();
+
